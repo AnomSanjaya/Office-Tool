@@ -42,11 +42,11 @@ Setelah aktivasinya berhasil, Office akan tetap aktif.
 
 `Pastikan bahwa kunci anda bisa dipakai untuk aktivasi melalui telepon` dan pasang kuncinya. Dalam submenu tombol [Pasang kunci], klik "Tampilkan ID Instalasi (IID)". Setelah mendapatkan ID Konfirmasi, masukkan ID Konfirmasi anda tanpa blok dan klik submenu "Pasang ID Konfirmasi (CID)". Setelah aktivasinya berhasil, Office akan tetap aktif.
 
-### Aktivasi Melalui KMSn
+### Aktivasi Melalui KMS
 
 Pastikan Office anda terpasang dengan versi Volume License. Apabila anda tidak mengetahui ini adalah versi Volume License, silakan pasang lisensi Volume license yang cocok. Misalnya, Apabila anda ingin mengaktivasi Office 2016, Tinggal perlu pasang Office 2016 Volume license. Lalu anda perlu memasukkan alamat server KMS yang valid, `jangan lupa klik tombol [Atur alamat server]`. Ketika semua konfigurasinya sudah tepat, jaringannya normal, dan server KMS-nya normal, Klik tombol [Aktifkan]. Berhasil? Silakan menikmati!
 
-## Cec Server KMS
+## Cek Server KMS
 
 ---
 
