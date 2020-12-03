@@ -1,6 +1,444 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:sys="clr-namespace:System;assembly=System.RunTime"
+                    xml:space="preserve">
+    <!-- Country settings, it is used to get information from server. -->
+    <sys:String x:Key="Culture">id-id</sys:String>
+    <!-- Eula Content -->
+    <sys:String x:Key="EulaTitle">Ketentuan Lisensi</sys:String>
+    <sys:String x:Key="EulaContent">Dengan menggunakan perangkat lunak ini, anda harus menerima [Ketentuan Perangkat Lunak]({0}) dan [Perjanjian Layanan Microsoft]({1}).</sys:String>
+    <!-- Header -->
+    <sys:String x:Key="ISOMode">-Mode ISO</sys:String>
+    <sys:String x:Key="Notifications">Pemberitahuan</sys:String>
+    <sys:String x:Key="Help">Bantuan</sys:String>	
+    <sys:String x:Key="About">Tentang</sys:String>
+    <sys:String x:Key="Settings">Pengaturan</sys:String>
+    <!-- Channels Name, if you don't want to translate them, please keep in English. -->
+    <sys:String x:Key="PerpetualVL2019">Office 2019 Perpetual Enterprise</sys:String>
+    <sys:String x:Key="SemiAnnual">Saluran Enterprise Semi-Tahunan</sys:String>
+    <sys:String x:Key="MonthlyEnterprise">Saluran Enterprise Bulanan</sys:String>
+    <sys:String x:Key="Current">Saluran Mutakhir</sys:String>
+    <sys:String x:Key="SemiAnnualPreview">Saluran Enterprise Semi-Tahunan (Pratinjau)</sys:String>
+    <sys:String x:Key="CurrentPreview">Saluran Mutakhir (Pratinjau)</sys:String>
+    <sys:String x:Key="BetaChannel">Saluran Beta</sys:String>
+    <!-- Global -->
+    <sys:String x:Key="Message">Pesan</sys:String>
+    <sys:String x:Key="Notice">Perhatian</sys:String>
+    <sys:String x:Key="Warning">Peringatan</sys:String>
+    <sys:String x:Key="Error">Kesalahan</sys:String>
+    <sys:String x:Key="Yes">Ya</sys:String>
+    <sys:String x:Key="No">Tidak</sys:String>
+    <sys:String x:Key="OK">OK</sys:String>
+    <sys:String x:Key="Cancel">Batal</sys:String>
+    <sys:String x:Key="OfficeDeploymentTool">Office Deployment Tool</sys:String>
+    <sys:String x:Key="Version">Versi:</sys:String>
+    <sys:String x:Key="Branch">Cabang:</sys:String>
+    <sys:String x:Key="Architecture">Arsitektur:</sys:String>
+    <sys:String x:Key="x86">32 Bit</sys:String>
+    <sys:String x:Key="x64">64 Bit</sys:String>
+    <sys:String x:Key="BasicSettings">Pengaturan dasar</sys:String>
+    <sys:String x:Key="AdvancedSettings">Pengaturan lanjutan</sys:String>
+    <sys:String x:Key="Retry">Ulangi</sys:String>
+    <sys:String x:Key="Normal">Normal</sys:String>
+    <sys:String x:Key="None">Tidak ada</sys:String>
+    <sys:String x:Key="Query">Kueri</sys:String>
+    <sys:String x:Key="Uninstall">Copot</sys:String>
+
+    <!-- Greetings -->
+    <!-- Showed when app started. -->
+    <sys:String x:Key="GreetingHi">Halo, {0}</sys:String>
+    <!-- 06:00 - 11:00 -->
+    <sys:String x:Key="GreetingGoodMorning">Selamat Pagi, {0}</sys:String>
+    <!-- 11:00 - 13:00 -->
+    <sys:String x:Key="GreetingGoodAfternoon1">Selamat Siang, {0}</sys:String>
+    <!-- 13:00 - 18:00 -->
+    <sys:String x:Key="GreetingGoodAfternoon2">Selamat Sore, {0}</sys:String>
+    <!-- 18:00 - 22:00 -->
+    <sys:String x:Key="GreetingGoodEvening">Selamat Malam, {0}</sys:String>
+    <!-- 22:00 - 06:00 (+1) -->
+    <sys:String x:Key="GreetingLateAtNight">Hai {0} sayang, ini sudah sangat malam nih, semoga mimpi indah ya!</sys:String>
+    <!-- Home -->
+    <sys:String x:Key="Deploy">Pemasangan</sys:String>
+    <sys:String x:Key="Activate">Aktivasi</sys:String>
+    <sys:String x:Key="Toolbox">Kotak Alat</sys:String>
+    <sys:String x:Key="ConvertDocuments">Konversi dokumen</sys:String>
+    <sys:String x:Key="Contact">Hubungi</sys:String>
+    <sys:String x:Key="InstallOffice">Pasang Office</sys:String>
+    <sys:String x:Key="O365PPRDescription">Termasuk Outlook, OneDrive for Business, Word, Excel, PowerPoint, dan lainnya.</sys:String>
+    <sys:String x:Key="O365HPRDescription">Termasuk Outlook, Word, Excel, PowerPoint, dan lainnya.</sys:String>
+    <sys:String x:Key="PP2019RDescription">Termasuk Outlook, Word, Excel, PowerPoint, dan lainnya.</sys:String>
+    <sys:String x:Key="HS2019Description">Termasuk Word, Excel, PowerPoint.</sys:String>
+    <sys:String x:Key="OtherInstallOptions">Opsi pemasangan lain</sys:String>
+    <sys:String x:Key="OIODescription">Pilih produk atau bahasa lain.</sys:String>
+    <sys:String x:Key="RunAsAdmin">Jalankan sebagai administrator</sys:String>
+    <sys:String x:Key="CreateShortcut">Buat pintasan desktop</sys:String>
+    <sys:String x:Key="ServerUnavailable">Tidak bisa menghubungkan ke server, silakan cek koneksi Internet anda.</sys:String>
+    <!-- Deploy Page -->
+    <sys:String x:Key="StartDeploy">Pasangkan Office</sys:String>
+    <sys:String x:Key="DeployViewCode">Tampilkan kode XML</sys:String>
+    <sys:String x:Key="DeployExportXML">Ekspor berkas XML</sys:String>
+    <sys:String x:Key="DeployImportXML">Impor berkas XML</sys:String>
+    <sys:String x:Key="DeployImportXMLFromWeb">Impor berkas XML dari situs</sys:String>
+    <!-- Download Panel -->
+    <sys:String x:Key="DownloadStatus">Status:</sys:String>
+    <sys:String x:Key="DownloadPending">Tertunda</sys:String>
+    <sys:String x:Key="DownloadDownloading">Mengunduh</sys:String>
+    <sys:String x:Key="DownloadPausing">Menjeda</sys:String>
+    <sys:String x:Key="DownloadPaused">Terjeda</sys:String>
+    <sys:String x:Key="DownloadCreating">Membuat berkas ISO</sys:String>
+    <sys:String x:Key="DownloadPause">Jeda</sys:String>
+    <sys:String x:Key="DownloadResume">Lanjut</sys:String>
+    <!-- Product -->
+    <sys:String x:Key="DeployProducts">Produk</sys:String>
+    <sys:String x:Key="DeployProductID">ID Produk:</sys:String>
+    <sys:String x:Key="DeployAddProduct">Tambah produk</sys:String>
+    <sys:String x:Key="DeployErrorConfig">⚠ Produk tidak bisa berdampingan dengan produk yang sudah ada.</sys:String>
+    <sys:String x:Key="DeployErrorModule">⚠ Dibutuhkan pemasangan produk dengan modul Office Tool Plus.</sys:String>
+    <sys:String x:Key="DeployErrorChannel">⚠ Produk tidak bisa dipasang dengan terpilihnya saluran: {0}</sys:String>
+    <sys:String x:Key="DeployErrorUnsupportedChannel">⚠ Apabila anda ingin menggunakan {0}, anda harus menggunkan modul Office Tool Plus untuk memasang Office.</sys:String>
+    <sys:String x:Key="DeployErrorSystem">⚠ Anda tidak bisa memasang Office 64 bit pada sistem yang bukan 64 bit.</sys:String>
+    <!-- Example: ⚠ You can't install 32 bit of Office, because you have the 64 bit of Office installed on your computer. -->
+    <sys:String x:Key="DeployErrorArch">⚠ Anda tidak bisa memasang Office {0}, karena anda mempunyai Office {1} yang terpasang di komputer komputer.</sys:String>
+    <sys:String x:Key="DeployWillUninstall">⚠ Klik "Pasangkan Office" untuk konfirmasi pencopotan.</sys:String>
+    <sys:String x:Key="DeployApps">Aplikasi</sys:String>
+    <!-- Language -->
+    <sys:String x:Key="LanguagePack">Paket Bahasa</sys:String>
+    <sys:String x:Key="LanguageID">ID Bahasa: {0}</sys:String>
+    <sys:String x:Key="LanguageType">Tipe paket bahasa: {0}</sys:String>
+    <sys:String x:Key="Full">Penuh</sys:String>
+    <sys:String x:Key="Partial">Sebagian</sys:String>
+    <sys:String x:Key="PartialWithoutProofingTools">Sebagian tanpa proofing tools</sys:String>
+    <sys:String x:Key="ProofingTools">Proofing tools</sys:String>
+    <sys:String x:Key="LangFullTip">Paket bahasa yang berisi tampilan bahasa dan proofing tools.</sys:String>
+    <sys:String x:Key="LangPartialTip">Paket bahasa yang berisi tampilan bahasa untuk beberapa aplikasi Office lain termasuk proofing tools.</sys:String>
+    <sys:String x:Key="LangPartialWithoutProofingToolsTip">Paket bahasa yang berisi tampilan bahasa untuk beberapa aplikasi Office lain, namun tidak termasuk proofing tools.</sys:String>
+    <sys:String x:Key="LangProofingToolsTip">Paket bahasa yang hanya termasuk pemeriksa ejaan (spell checker) .</sys:String>
+    <sys:String x:Key="DeployAsProof">Hanya pasangkan proofing tools.</sys:String>
+    <sys:String x:Key="DeployAddLanguagePackage">Tambah paket bahasa</sys:String>
+    <!-- Advanced Settings -->
+    <sys:String x:Key="DeployOrganizationName">Berikan nama organisasi anda untuk mengatur detil properti di dokumen Office.</sys:String>
+    <sys:String x:Key="DeployDescription">Berikan sebuah deskripsi untuk dibuatkan dokumentasi.</sys:String>
+    <!-- Installation Settings -->
+    <sys:String x:Key="DeployInstallationSettings">Pengaturan pemasangan</sys:String>
+    <sys:String x:Key="DeployDownloadPath">Jalur unduhan:</sys:String>
+    <sys:String x:Key="DeployDownloadPathTip">Tunjukkan letak dimana berkas pemasangan yang sudah diunduh berada, anda harus menentukan versi ketika menggunakan DownloadPath.</sys:String>
+    <sys:String x:Key="DeploySourcePath">Sumber jalur:</sys:String>
+    <sys:String x:Key="DeploySourcePathTip">Apabila sumber jalur kosong, sumber Office CDN akan terpakai secara umum. Di mode unduh, tunjukkan dimana berkas akan disimpan.</sys:String>
+    <sys:String x:Key="DeployDisplayLevel">Tidak ada antarmuka yang ditampilkan selama pemasangan.</sys:String>
+    <sys:String x:Key="DeployAllowCDNFallback">Izinkan pemasangan kembali ke Office CDN untuk mencari bahasa yang hilang.</sys:String>
+    <sys:String x:Key="DeployForceCloseApps">Tutup semua aplikasi Office yang berjalan.</sys:String>
+    <sys:String x:Key="DeployPinIconToTaskbar">Pin ikon ke taskbar di Windows 7, 8 dan 8.1.</sys:String>
+    <!-- Log Settings -->
+    <sys:String x:Key="DeployLogSettings">Opsi log</sys:String>
+    <sys:String x:Key="DeploySaveLog">Aktifkan log</sys:String>
+    <sys:String x:Key="DeployLogPath">Jalur Log:</sys:String>
+    <!-- Update Settings -->
+    <sys:String x:Key="DeployUpdateSettings">Pengaturan pembaruan</sys:String>
+    <sys:String x:Key="DeployEnableUpdate">Aktifkan pembaruan otomatis Office.</sys:String>
+    <sys:String x:Key="DeployEnableCOM">Mengatur pembaruan menggunakan Manajer Konfigurasi</sys:String>
+    <sys:String x:Key="DeployUpdatePath">Sumber pembaruan:</sys:String>
+    <sys:String x:Key="DeployTargetVersion">Versi target:</sys:String>
+    <sys:String x:Key="DeployUpdateDeadline">Batas waktu pembaruan:</sys:String>
+    <sys:String x:Key="DeployUpdateChannel">Saluran pembaruan:</sys:String>
+    <!-- Upgrade Settings -->
+    <sys:String x:Key="DeployUpgradeSettings">Opsi peningkatan</sys:String>
+    <sys:String x:Key="DeployMigrateArch">Migrasi arsitektur</sys:String>
+    <sys:String x:Key="DeployMigrateArchTip">Jika migrasi arsitektur dicentang, instalasi Office yang sudah ada akan diubah ke arsitektur yang digunakan saat ini.</sys:String>
+    <sys:String x:Key="DeployForceUpgrade">Tingkatkan paksa</sys:String>
+    <sys:String x:Key="DeployRemoveMSI">Copot versi MSI Office yang ada.</sys:String>
+    <sys:String x:Key="DeployIgnoreProduct">Abaikan produk ini</sys:String>
+    <sys:String x:Key="DeployMatchPreviousMSI">Pasang dengan bahasa yang sama seperti versi MSI Office sebelumnya.</sys:String>
+    <!-- Activate Settings -->
+    <sys:String x:Key="DeployActivateSettings">Pengaturan aktivasi</sys:String>
+    <sys:String x:Key="DeployAcceptEULA">Menerima EULA otomatis</sys:String>
+    <sys:String x:Key="DeployAcceptEULATip">Apabila "Accept EULA" dipilih, kotak dialog "Microsoft Software License Terms" tidak akan ditampilkan.</sys:String>
+    <sys:String x:Key="DeployProductMAK">Pengaturan MAK</sys:String>
+    <sys:String x:Key="DeployAutoActivate">Aktivasi otomatis</sys:String>
+    <sys:String x:Key="DeployProductActivation">Aktivasi Produk</sys:String>
+    <sys:String x:Key="DeployActivateByUser">Berdasarkan pengguna.</sys:String>
+    <sys:String x:Key="DeployActivateBySCL">Komputer bersama.</sys:String>
+    <sys:String x:Key="DeployActivateSCLCacheOverride">Izinkan token lisensi menjelajah.</sys:String>
+    <sys:String x:Key="DeployBasedDevice">Berdasarkan perangkat.</sys:String>
+    <!-- App Preferences -->
+    <sys:String x:Key="DeployPreferences">Aplikasi disukai</sys:String>
+    <sys:String x:Key="DeployPreferencesFilter">Ketik untuk mencari aplikasi yang disukai</sys:String>
+    <sys:String x:Key="DeployPreferencesApply">Terapkan</sys:String>
+    <sys:String x:Key="DeployPreferencesReset">Atur Ulang</sys:String>
+    <sys:String x:Key="DeployPreferencesResetAll">Atur ulang semua pengaturan</sys:String>
+    <!-- Deploy Settings -->
+    <sys:String x:Key="DeploySettings">Pengaturan pemasangan</sys:String>
+    <sys:String x:Key="DeployChannel">Saluran:</sys:String>
+    <sys:String x:Key="DeployMode">Mode pemasangan:</sys:String>
+    <sys:String x:Key="DeployModeIWD">Pasang ketika sedang mengunduh</sys:String>
+    <sys:String x:Key="DeployModeIAD">Pasang ketika selesai mengunduh</sys:String>
+    <sys:String x:Key="DeployModeUEI">Gunakan sumber pemasangan yang sudah ada</sys:String>
+    <sys:String x:Key="DeployModeCreateISO">Buat berkas ISO</sys:String>
+    <sys:String x:Key="DeployModeDownload">Hanya mengunduh</sys:String>
+    <sys:String x:Key="DeployModeEdit">Hanya mengubah konfigurasi</sys:String>
+    <sys:String x:Key="DeployModule">Modul pemasangan:</sys:String>
+    <sys:String x:Key="DeployCreateShortcut">Buat pintasan ke desktop.</sys:String>
+    <sys:String x:Key="DeployInstalliSlide">Pasang iSlide.</sys:String>
+    <!-- Download Page -->
+    <sys:String x:Key="DownloadDownloadSettings">Pengaturan unduhan</sys:String>
+    <sys:String x:Key="DownloadEngine">Mesin:</sys:String>
+    <sys:String x:Key="DownloadEngineThunder">Thunder</sys:String>
+    <sys:String x:Key="DownloadUseHTTPS">Hubungkan melalui HTTPS</sys:String>
+    <sys:String x:Key="DownloadThunderSettings">Pengaturan Thunder</sys:String>
+    <sys:String x:Key="DownloadSpeedLimit">Batas kecepatan:</sys:String>
+    <sys:String x:Key="DownloadProxyType">Tipe proxy:</sys:String>
+    <sys:String x:Key="DownloadServerAddress">Alamat server:</sys:String>
+    <sys:String x:Key="DownloadUserName">Nama pengguna:</sys:String>
+    <sys:String x:Key="DownloadPassword">Kata sandi:</sys:String>
+    <!-- Installation Manage -->
+    <sys:String x:Key="InstallationFilesManage">Kelola berkas pemasangan</sys:String>
+    <!-- Activate Page -->
+    <sys:String x:Key="ActivateViewInformation">Tampilkan informasi aktivasi.</sys:String>
+    <sys:String x:Key="ActivateViewLicenses">Tampilkan informasi lisensi.</sys:String>
+    <sys:String x:Key="ActivateViewFailureHistory">Tampilkan riwayat gagalnya aktivasi MAK/Retail.</sys:String>
+    <sys:String x:Key="ActivateViewKMSHistory">Tampilkan riwayat aktivasi klien KMS.</sys:String>
+    <sys:String x:Key="ActivateClearResult">Bersihkan hasil operasi</sys:String>
+    <sys:String x:Key="ActivateResult">Hasil operasi</sys:String>
+    <!-- Licenses -->
+    <sys:String x:Key="ActivateLicensesManage">Manajemen lisensi</sys:String>
+    <sys:String x:Key="ActivateSelectLicense">Pilih lisensi:</sys:String>
+    <sys:String x:Key="ActivateInstallLicenses">Pasang lisensi</sys:String>
+    <sys:String x:Key="ActivateInstallOtherLicenses">Install other licenses</sys:String>
+    <sys:String x:Key="ActivateClearLicenses">Bersihkan lisensi</sys:String>
+    <sys:String x:Key="ActivateRLS">Atur ulang status lisensi Office</sys:String>
+    <sys:String x:Key="ActivateRLSTip">Anda perlu memberikan nilai SKU ID.</sys:String>
+    <sys:String x:Key="ActivateRLSForAll">Atur ulang semua status lisensi</sys:String>
+    <sys:String x:Key="ActivateRLSForAllTip">Atur ulang status lisensi untuk semua kunci produk Office yang terpasang yang berarti anda perlu mengaktivasi ulang Office setelah operasi ini.</sys:String>
+    <sys:String x:Key="ActivateClearActivation">Bersihkan aktivasi</sys:String>
+    <!-- Key -->
+    <sys:String x:Key="ActivateKeyManage">Manajemen kunci produk</sys:String>
+    <sys:String x:Key="ActivateProductKey">Kunci produk:</sys:String>
+    <sys:String x:Key="ActivateProductKeyTip">Masukkan kunci produk untuk dipasang atau 5 karakter dari kunci produk yang terpasang untuk dicopot.</sys:String>
+    <sys:String x:Key="ActivateInstallKey">Pasang kunci produk</sys:String>
+    <sys:String x:Key="ActivateUninstallKey">Copot kunci produk</sys:String>
+    <sys:String x:Key="ActivateUninstallAllKeys">Copot semua kunci produk</sys:String>
+    <sys:String x:Key="ActivateViewIID">Tampilkan ID Instalasi (IID)</sys:String>
+    <sys:String x:Key="ActivateInstallCID">Pasang ID Konfirmasi (CID)</sys:String>
+    <sys:String x:Key="ActivateInstallCIDTip">Anda perlu memberikan ID Konfirmasi (CID).</sys:String>
+    <!-- KMS -->
+    <sys:String x:Key="ActivateKMSManage">Manajemen KMS</sys:String>
+    <sys:String x:Key="ActivateKMSHost">Host KMS:</sys:String>
+    <sys:String x:Key="ActivateKMSPort">Port KMS (opsional):</sys:String>
+    <sys:String x:Key="ActivateSetKMS">Atur host KMS</sys:String>
+    <sys:String x:Key="ActivateSetPort">Atur port KMS</sys:String>
+    <sys:String x:Key="ActivateEnableCaching">Aktifkan tembolok host</sys:String>
+    <sys:String x:Key="ActivateDisableCaching">Nonaktifkan tembolok host</sys:String>
+    <sys:String x:Key="ActivateClearKMS">Hapus host KMS (atur ulang port ke bawaan)</sys:String>
+    <!-- Content Translation -->
+    <sys:String x:Key="ActivationTitle">Proses Aktivasi Office</sys:String>
+    <sys:String x:Key="LicenseDescription">Deskripsi Lisensi: </sys:String>
+    <sys:String x:Key="LicenseStatus">Status Lisensi: </sys:String>
+    <sys:String x:Key="RemainGrace">Masa Tenggang: </sys:String>
+    <sys:String x:Key="RemainGraceDay">hari</sys:String>
+    <sys:String x:Key="RemainGraceMin">menit sebelum kedaluwarsa</sys:String>
+    <sys:String x:Key="Licexpiry">Percobaan Kedaluwarsa: </sys:String>
+    <sys:String x:Key="ErrorCode">Kode Kesalahan: </sys:String>
+    <sys:String x:Key="ErrorDescrpition">Deskripsi Kesalahan: </sys:String>
+    <sys:String x:Key="ErrorUnknown">Terjadi kesalahan yang tak diketahui.</sys:String>
+    <sys:String x:Key="StatusLicensed"> **---BERLISENSI---** </sys:String>
+    <sys:String x:Key="StatusUnlicensed"> `---TIDAK_BERLISENSI---` </sys:String>
+    <sys:String x:Key="StatusOOBGrace"> `---MASA_TENGGANG_OOB---` </sys:String>
+    <sys:String x:Key="StatusOOTGrace"> `---MASA_TENGGANG_OOT---` </sys:String>
+    <sys:String x:Key="StatusNonGenuineGrace"> `---MASA_TENGGANG_TIDAK_ASLI---` </sys:String>
+    <sys:String x:Key="StatusNotifications"> `---PEMBERITAHUAN---` </sys:String>
+    <sys:String x:Key="StatusExtendedGrace"> `---PERPANJANG_MASA_TENGGANG---` </sys:String>
+    <sys:String x:Key="StatusUnknown"> `---TAK_DIKETAHUI---` </sys:String>
+
+    <sys:String x:Key="AppliedSetting">Pengaturan berhasil diterapkan.</sys:String>
+    <sys:String x:Key="NoKMSLics">Tidak ada Lisensi KMS Office yang ditemukan di sistem.</sys:String>
+    <sys:String x:Key="NoKeyInstalled">Tidak ada kunci produk yang terpasang.</sys:String>
+    <sys:String x:Key="UninstallKey">Kunci produk berhasil dicopot.</sys:String>
+    <sys:String x:Key="ActivationSuccess">**Aktivasi produk berhasil**</sys:String>
+    <sys:String x:Key="OfflineActivationSuccess">**Aktivasi produk secara offline berhasil**</sys:String>
+    <sys:String x:Key="IKeySuccess">**Kunci produk berhasil dipasang**</sys:String>
+    <sys:String x:Key="ProductKey">5 karakter terakhir dari kunci produk yang terpasang: </sys:String>
+    <sys:String x:Key="UninstallingKey">Mencopot kunci produk untuk: </sys:String>
+    <sys:String x:Key="ILicense">Memasang lisensi Office: </sys:String>
+    <sys:String x:Key="ILicenseSuccess">Lisensi Office berhasil dipasang.</sys:String>
+    <sys:String x:Key="InstallationID">ID Instalasi:</sys:String>
+    <sys:String x:Key="SKMSEvent">Mencari peristiwa aktivasi KMS di Perangkat: </sys:String>
+    <sys:String x:Key="SIAEvent">Mencari peristiwa gagalnya aktivasi Internet di Perangkat: </sys:String>
+    <sys:String x:Key="NoKMSEvent">Tidak ada peristiwa aktivasi KMS di Perangkat: </sys:String>
+    <sys:String x:Key="NoIAEvent">Tidak ada peristiwa gagal yang ditemukan di Perangkat: </sys:String>
+    <sys:String x:Key="NoEvents">Tidak ditemukan peristiwa.</sys:String>
+    <sys:String x:Key="SuccessEvent">Peristiwa suksesnya aktivasi: </sys:String>
+    <sys:String x:Key="FailureEvent">Peristiwa gagalnya aktivasi: </sys:String>
+    <sys:String x:Key="ProductKeyNotFound">Kunci produk tidak ditemukan</sys:String>
+    <sys:String x:Key="NotFound">Tidak ditemukan.</sys:String>
+    <sys:String x:Key="NotLicenseFound">Lisensi tidak ditemukan.</sys:String>
+    <sys:String x:Key="InfoOnly"> (status lisensi hanya untuk tujuan informasi saja)</sys:String>
+    
+    <sys:String x:Key="VLActivationType">Konfigurasi Tipe Aktivasi: </sys:String>
+    <sys:String x:Key="ActRecent">Informasi klien aktivasi terbaru yang sukses: </sys:String>
+    <sys:String x:Key="KMSDNS">Nama perangkat KMS dari DNS: </sys:String>
+    <sys:String x:Key="ADInfoAOName">Nama Objek aktivasi: </sys:String>
+    <sys:String x:Key="ActivationInterval">Jangka Waktu aktivasi:</sys:String>
+    <sys:String x:Key="RenewalInterval">Jangka Waktu Pembaruan: </sys:String>
+    <sys:String x:Key="IntervalMinutes">menit</sys:String>
+    <sys:String x:Key="HostCaching">Tembolok host KMS: </sys:String>
+    <sys:String x:Key="HostCachingEnabled">Diaktifkan</sys:String>
+    <sys:String x:Key="HostCachingDisabled">Dinonaktifkan</sys:String>
+    <sys:String x:Key="HostRegOverride">Perangkat KMS: </sys:String>
+    <!-- Toolbox Page -->
+    <sys:String x:Key="CommonTools">Alat umum</sys:String>
+    <sys:String x:Key="RepairTools">Alat perbaikan</sys:String>
+    <sys:String x:Key="ToolboxSave">Simpan</sys:String>
+    <sys:String x:Key="ToolboxStart">Mulai</sys:String>
+    <sys:String x:Key="ToolboxRepair">Perbaiki</sys:String>
+    <!-- Common Tools -->
+    <sys:String x:Key="ToolboxChangeChannel">Ganti saluran pembaruan Office</sys:String>
+    <sys:String x:Key="ToolboxChangeChannelDescription">Dukungan untuk memilih saluran lain atau HTTP kustom, jalur lokal. Setelah menyimpan pengaturan anda, silakan cek pembaruan di aplikasi Office.</sys:String>
+    <sys:String x:Key="ToolboxChangeOwner">Ganti pemilik produk Office</sys:String>
+    <sys:String x:Key="ToolboxChangeOwnerDescription">Nama hanya ditampilkan di laman akun pada aplikasi Office hanya jika Office menggunakan lisensi yang tepat.&#x000A;&#x000A; Untuk mengganti nama pemilik pada produk tertentu, gunakan format: [ID Produk]:[Nama]</sys:String>
+    <sys:String x:Key="ToolboxChangeOwnerName">Nama:</sys:String>
+    <sys:String x:Key="ToolboxCheckVersion">Mengumpulkan versi Office</sys:String>
+    <sys:String x:Key="CheckVersionCreatedTimeUTC">Waktu dibuat (UTC):</sys:String>
+    <sys:String x:Key="QueryErrorCode">Mengumpulkan informasi kode kesalahan</sys:String>
+    <sys:String x:Key="QueryErrorCodeDescription">Kode kesalahan biasanya dimulai dengan '0x'. Contoh: 0x2 atau 0x80070002.</sys:String>
+    <sys:String x:Key="ToolboxCheckKMS">Cek status KMS</sys:String>
+    <sys:String x:Key="ToolboxCheckKMSDescription">Pisahkan setiap KMS dengan koma atau baris baru, anda bisa juga menambahkan port-nya. Ketika aktivasi berhasil ditampilkan, itu berarti server-nya tersedia.</sys:String>
+    <sys:String x:Key="CheckKMSConncetionSuccessful">Berhasil terkoneksi, tetapi gagal menguji coba aktivasinya.</sys:String>
+    <sys:String x:Key="CheckKMSConncetionFailed">Gagal terkoneksi!</sys:String>
+    <sys:String x:Key="CheckKMSActivationSuccessful">Berhasil terkoneksi, berhasil pula menguji coba aktivasinya.</sys:String>
+    <sys:String x:Key="ToolboxCollectLog">Kumpulkan catatan pemasangan Office</sys:String>
+    <sys:String x:Key="ToolboxCollectLogDescription">Kumpulkan catatan untuk menganalisa dan memecahkan masalah yang tidak diketahui.</sys:String>
+    <!-- Repair Tools -->
+    <sys:String x:Key="ToolboxRemoveOffice">Copot Office</sys:String>
+    <sys:String x:Key="ToolboxRODescription">Ini akan mencopot komponen, berkas, dan registri terkait Office. Apabila pembersihan gagal, cobalah beberapa kali atau lakukan dengan cara lain.&#x000A;&#x000A;Catatan: Fitur ini hanya perlu digunakan ketika Office tidak bisa dicopot dengan benar.</sys:String>
+    <sys:String x:Key="ToolboxRemoveViaOfficial">Copot Office melalui alat resmi</sys:String>
+    <sys:String x:Key="ToolboxRemoveViaOfficeToolPlus">Copot Office melalui Office Tool Plus</sys:String>
+    <sys:String x:Key="ToolboxRemoveUWPOffice">Copot aplikasi Office dari Microsoft Store</sys:String>
+    <sys:String x:Key="ToolboxRemoveOfficeDone">Selesai mencopot Office.</sys:String>
+    <sys:String x:Key="ToolboxRepairOfficeDocumentIcon">Perbaiki ikon dokumen Office</sys:String>
+    <sys:String x:Key="ToolboxRepairODIDescription">Ini akan mengatur ulang asosiasi dokumen Office. Setelah ini selesai, anda akan perlu juga menggunakan Perbaikan Cepat Office.</sys:String>
+    <sys:String x:Key="ToolboxRepairActivation">Perbaiki aktivasi Office</sys:String>
+    <sys:String x:Key="ToolboxRepairActivationDescription">Ini akan mengatur ulang konfiguarsi dari layanan Software Protection dan membangun ulang berkas aktivasi di Windows Insider. Berlaku untuk "Unknown error occurred" atau "license consumption failed (0xC004E015)" ketika mengaktivasi Office.</sys:String>
+    <sys:String x:Key="ToolboxRepairVBS">Perbaiki asosiasi berkas VBS</sys:String>
+    <sys:String x:Key="ToolboxRepairVBSDescription">Ini akan membangun ulang berkas asosiasi VBS dan berlaku untuk mengaktivasi Office dengan "There is no script engine for file extension ".vbs"".</sys:String>
+    <sys:String x:Key="ToolboxRepairVariables">Perbaiki variabel sistem</sys:String>
+    <sys:String x:Key="ToolboxRepairVariablesDescription">Ini akan mengatur ulang variabel sistem ke nilai bawaan. Jangan digunakan apabila anda tidak yakin.</sys:String>
+    <sys:String x:Key="ToolboxRepairTemplates">Mengembalikan template dokumen bawaan Word</sys:String>
+    <sys:String x:Key="ToolboxRepairTemplatesDescription">Ini akan membangun ulang template dokumen bawaan Word untuk yang menampilkan [Compatible Mode] ketika dokumen baru dibuat.</sys:String>
+    <sys:String x:Key="ToolboxResetOfficeSettings">Kembalikan pengaturan Office ke pengaturan aslinya</sys:String>
+    <sys:String x:Key="ToolboxResetOfficeSettingsDescription">Ini akan mengatur ulang pengaturan Office anda, termasuk pengaturan aplikasi, riwayat berkas lokal, dan jalur penyimpanan terakhir. Catatan: Harap tutup semua aplikasi Office sebelum melanjutkan.</sys:String>
+    <!-- Convert Document -->
+    <sys:String x:Key="ConvertSourceFormat">Format masukkan:</sys:String>
+    <sys:String x:Key="ConvertOutputFormat">Format keluaran:</sys:String>
+    <sys:String x:Key="ConvertSelectFile">Pilih berkas</sys:String>
+    <sys:String x:Key="ConvertSelectFolder">Pilih folder</sys:String>
+    <sys:String x:Key="ConvertSearchOnSubfolders">Mencari berkas dalam subfolder ketika memilih sebuah folder.</sys:String>
+    <sys:String x:Key="ConvertDeleteFile">Hapus berkas aslinya setelah konversi berhasil.</sys:String>
+    <sys:String x:Key="ConvertFileList">Daftar berkas</sys:String>
+    <sys:String x:Key="ConvertFileName">Nama berkas</sys:String>
+    <sys:String x:Key="ConvertNewFormat">Format baru</sys:String>
+    <sys:String x:Key="ConvertPath">Jalur</sys:String>
+    <!-- Settings Panel -->
+    <sys:String x:Key="LanguageSettings">Bahasa:</sys:String>
+    <sys:String x:Key="ThemeSettings">Tema:</sys:String>
+    <sys:String x:Key="SaveSettings">Simpan pengaturan ke lokal.</sys:String>
+    <sys:String x:Key="DisplaySettings">Pengaturan tampilan</sys:String>
+    <sys:String x:Key="SettingsTopmost">Selalu di atas</sys:String>
+    <sys:String x:Key="SettingsTransparency">Transparansi</sys:String>
+    <sys:String x:Key="SettingsBlurValue">Pengaburan</sys:String>
+    <sys:String x:Key="SettingsChooseBGI">Pilih gambar latar belakang</sys:String>
+    <!-- About Panel -->
+    <sys:String x:Key="AppInf">Informasi aplikasi</sys:String>
+    <sys:String x:Key="Homepage">Laman Depan:</sys:String>
+    <sys:String x:Key="CreatorInfo">Dikembangkan oleh Yerong, berdasarkan Office Deployment Tool.</sys:String>
+    <sys:String x:Key="Copyright">Hak Cipta © 2016-{0} Yerong Seluruh hak cipta dilindungi.</sys:String>
+    <sys:String x:Key="TrademarkInfo">Microsoft Office adalah merek dagang terdaftar atau merek dagang Microsoft Corporation di Amerika Serikat dan/atau negara lain.</sys:String>
+    <sys:String x:Key="ServerProvider">Penyedia server</sys:String>
+    <sys:String x:Key="Translator">Penerjemah</sys:String>
+    <sys:String x:Key="BackgroundImageSource">Sumber gambar latar belakang</sys:String>
+    <!-- Notification Panel -->
+    <sys:String x:Key="ClearNotifications">Bersihkan semua pemberitahuan</sys:String>
+    
+    <!-- Text about Textbox, notice to control the string length. -->
+    <sys:String x:Key="TextBlockCommand">> Masukkan perintah di sini.</sys:String>
+    <sys:String x:Key="TextBlockResources">Lokal, jaringan, atau jalur HTTP.</sys:String>
+
+    <!-- Task Message -->
+    <sys:String x:Key="Task_PreparingDownload">Mempersiapkan untuk mengunduh Office.</sys:String>
+    <sys:String x:Key="Task_DeployClickToRun">Pemasangan Click-to-Run</sys:String>
+    <sys:String x:Key="Task_ODT">Office Deployment Tool sedang berjalan sekarang, silakan tunggu.</sys:String>
+    <sys:String x:Key="Task_OSPP">OSPP sedang berjalan sekarang, silakan tunggu.</sys:String>
+    <sys:String x:Key="Task_CheckVersion">Mengumpulkan informasi versi Office.</sys:String>
+    <sys:String x:Key="Task_CheckKMS">Menguji coba host KMS.</sys:String>
+    <sys:String x:Key="Task_CollectLog">Mengumpulkan catatan pemasangan Office.</sys:String>
+    <sys:String x:Key="Task_CleanOffice">Membersihkan Office.</sys:String>
+    <sys:String x:Key="Task_ConvertDocument">Mengonversikan dokumen Office.</sys:String>
+    <!-- Example: Installing iSlide, please wait. -->
+    <sys:String x:Key="Task_InstallingApp">Memasang {0}, silakan tunggu.</sys:String>
+
+    <!-- Question Message -->
+    <sys:String x:Key="QuesUpdateReady">Pembaruan sudah siap</sys:String>
+    <sys:String x:Key="QuesUpdateNow">Ini hanya membutuhkan beberapa detik, mulai ulang aplikasinya sekarang?</sys:String>
+    <sys:String x:Key="QuesExit">Office Tool Plus sedang bekerja sekarang. Apakah anda ingin keluar?</sys:String>
+    <sys:String x:Key="QuesOneClickInstallation">Anda memilih {0} untuk dipasangkan.&#x000A;Apabila anda ingin memilih aplikasi atau bahasa, gunakan opsi pemasangan lain.&#x000A;&#x000A;Klik "Ya" untuk memasang setelah diunduh, "Tidak" untuk memasang saat mengunduh, atau tutup jendela untuk membatalkannya.</sys:String>
+    <sys:String x:Key="QuesInstallation">Siap untuk memasang Office?</sys:String>
+    <sys:String x:Key="QuesConfiguration">Tampilkan kode untuk konfigurasi detail, apakah konfigurasi dasar di atas sudah tepat?</sys:String>
+    <sys:String x:Key="QuesDeleteFiles">Hapus {0}?</sys:String>
+    <sys:String x:Key="QuesInstallLicenses">Anda mungkin tidak melihat informasi aktivasi di Office setelah memasang lisensi Office, tetapi anda dapat melihat informasi atau mengaktivasi Office melalui Office Tool Plus. Apakah anda ingin melanjutkan?</sys:String>
+    <sys:String x:Key="QuesClearLicenses">Mencopot semua lisensi berarti anda perlu melakukan pemasangan ulang lisensi setelah operasi ini. Apakah anda ingin melanjutkan?</sys:String>
+    <sys:String x:Key="QuesClearActivation">Mencopot semua kunci produk dan lisensi, berarti anda perlu melakukan pemasangan ulang lisensi dan mengaktivasikan Office setelah operasi ini. Apakah anda ingin melanjutkan?</sys:String>
+    <sys:String x:Key="QuesClearKeys">Mencopot semua kunci produk, berarti anda perlu melakukan pemasangan ulang kunci produk dan mengaktivasikan Office setelah operasi ini. Apakah anda ingin melanjutkan?</sys:String>
+    <sys:String x:Key="QuesCleanOffice">Yakin untuk membersihkan Office? Setelah dijalankan, operasi ini tidak dapat dibatalkan.</sys:String>
+
+    <!-- Info Message -->
+    <sys:String x:Key="InfoPermission">Office Tool Plus berjalan dalam akses biasa, beberapa fitur tidak tersedia.</sys:String>
+    <sys:String x:Key="InfoUpdate">Anda menggunakan Office Tool Plus versi terbaru.</sys:String>
+    <sys:String x:Key="InfoNoConfigured">Tidak ada perubahan yang terdeteksi.</sys:String>
+    <sys:String x:Key="InfoAllExist">Tidak diperlukan untuk mengunduh, semua berkas sudah ada.</sys:String>
+    <sys:String x:Key="InfoSetupExited">Office Deployment Tool tertutup secara normal.</sys:String>
+    <sys:String x:Key="InfoInstallationComplete">Pemasangan berhasil.</sys:String>
+    <sys:String x:Key="InfoInstallationFailed">Pemasangan gagal.</sys:String>
+
+    <!-- Success Message -->
+    <sys:String x:Key="SuccessDownloadInstallation">Berkas pemasangan telah terunduh.</sys:String>
+    <sys:String x:Key="SuccessSave">Berhasil tersimpan.</sys:String>
+    <sys:String x:Key="SuccessRepair">Perbaikan berhasil.</sys:String>
+
+    <!-- Error Message -->
+    <sys:String x:Key="ErrRunning">Office Tool Plus sedang berjalan saat ini.</sys:String>
+    <sys:String x:Key="ErrGettingInfo">Konten sedang tidak tersedia, silakan coba lagi nanti.</sys:String>
+    <sys:String x:Key="ErrReadingInfo">Gagal membaca informasi Office.</sys:String>
+    <sys:String x:Key="ErrSavingInfo">Gagal menyimpan informasi Office.</sys:String>
+    <sys:String x:Key="ErrSetProxy">Atur proxy gagal!</sys:String>
+    <sys:String x:Key="ErrGetVersion">Tidak bisa mendapatkan informasi versi, silakan coba lagi atau gunakan Office Deployment Tool.</sys:String>
+    <sys:String x:Key="ErrCreateISO">Tidak dapat menemukan berkas pemasangan Office dalam direktori Office Tool Plus, silakan unduh berkas pemasangan terlebih dahulu atau pindahkan berkas pemasangan ke lokasi yang tepat!</sys:String>
+    <sys:String x:Key="ErrInput">Kesalahan masukkan.</sys:String>
+    <sys:String x:Key="ErrSetupExited">Office Deployment Tool tertutup secara tidak normal.</sys:String>
+    <sys:String x:Key="ErrAppNotFound">{0} tidak ditemukan di komputer, silakan konfirmasi apakah versi Office terbaru telah dipasang.</sys:String>
+
+    <!-- Error Message about Thunder -->
+    <sys:String x:Key="DownloadErrorTitle">Unduhan gagal</sys:String>
+    <sys:String x:Key="ThunderErrorStart">Gagal menjalankan tugas.</sys:String>
+    <sys:String x:Key="ThunderErrorStop">Gagal menjeda tugas.</sys:String>
+    <sys:String x:Key="ThunderErrorExit">Gagal keluarkan Thunder.</sys:String>
+    <sys:String x:Key="ThunderErrorPreparation">Gagal mempersiapkan Thunder.</sys:String>
+    <sys:String x:Key="ThunderErrorUnknown">Unduhan gagal tidak diketahui.</sys:String>
+    <sys:String x:Key="ThunderErrorCreate">Gagal membuat tugas.</sys:String>
+    <sys:String x:Key="ThunderErrorDelete">Gagal menghapus berkas.</sys:String>
+    <sys:String x:Key="ThunderErrorFileHash">Verifikasi berkas gagal.</sys:String>
+    <sys:String x:Key="ThunderErrorPieceHash">Verifikasi berkas gagal.</sys:String>
+    <sys:String x:Key="ThunderErrorRead">Gagal membaca berkas.</sys:String>
+    <sys:String x:Key="ThunderErrorRename">Gagal mengubah nama berkas.</sys:String>
+    <sys:String x:Key="ThunderErrorWrite">Gagal menuliskan berkas.</sys:String>
+    <sys:String x:Key="ThunderErrorDownInvalid">Alamat tidak cocok.</sys:String>
+    <sys:String x:Key="ThunderErrorNotIP">Tidak ada IP tersedia dalam unduhan HTTP.</sys:String>
+    <sys:String x:Key="ThunderErrorIDInvalid">ID Tugas tidak valid.</sys:String>
+    <sys:String x:Key="ThunderErrorProxyAuthTypeFailed">Autentikasi proxy gagal.</sys:String>
+    <sys:String x:Key="ThunderErrorProxyAuthTypeUnknown">Tipe proxy tidak diketahui.</sys:String>
+    <sys:String x:Key="ThunderErrorTimeOut">Waktu tugas telah habis.</sys:String>
+    <sys:String x:Key="ThunderErrorCrashed">Mesin Thunder bermasalah.</sys:String>
+    <sys:String x:Key="ThunderErrorCancel">Tugas dibatalkan.</sys:String>
+</ResourceDictionary>System.RunTime"
                     xml:space="preserve">
     <!-- Country settings, it is used to get information from server. -->
     <sys:String x:Key="Culture">id-id</sys:String>
