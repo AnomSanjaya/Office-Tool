@@ -1,95 +1,50 @@
-﻿# Office Tool Plus
+#
 
-[⬅ Zurück](https://github.com/YerongAI/Office-Tool)
+<p align="center">
+<img alt="Office Tool Plus Logo" src="https://otp.landian.vip/static/images/logo.webp"/>
+</p>
 
-Office Tool Plus ist eine Software zur Verwaltung, Installation und zum Herunterladen von Office.
+<p align="center">
+<a href="https://www.coolhub.top/" target="_blank"><img alt="Author" src="https://img.shields.io/badge/Author-Yerong-blue?style=flat-square"/></a>
+<img alt="Language" src="https://img.shields.io/badge/Language-C%23-green?style=flat-square"/>
+<a href="https://otp.landian.vip/" target="_blank"><img alt="Release" src="https://img.shields.io/github/v/release/YerongAI/Office-Tool?style=flat-square"/></a>
+<img alt="License" src="https://img.shields.io/github/license/YerongAI/Office-Tool?style=flat-square"/>
+</p>
 
-Office Tool Plus basiert auf Microsofts [Office-Bereitstellungstool](https://docs.microsoft.com/de-de/DeployOffice/overview-of-the-office-2016-deployment-tool). Sie können damit die Konfiguration Ihrer Office-Installation anpassen sowie Installationsdateien herunterladen, um Office offline zu installieren.
+> Ein leistungsstarkes und nützliches Tool für Office-Bereitstellungen.
 
-Darüber hinaus können Sie Ihr installiertes Office verwalten, Sprachpakete hinzufügen oder Office-Produkte individuell deinstallieren.
+Unterstützt die benutzerdefinierte Bereitstellung und Aktivierung der folgenden Produkte:
 
-## Systemanforderungen
+- Microsoft 365
+- Office 2016, 2019, 2021
+- Visio 2016, 2019, 2021 & Online Plan 2
+- Project 2016, 2019, 2021 & Online Desktop Client
 
-Windows 7 SP1, Windows 8 oder Windows 10.
+Funktionen und Features:
 
-Windows Server 2008 R2 SP1, Windows Server 2012 oder neuer.
+- Erstellen Sie eine Office-Installationskonfiguration. Die Konfiguration kann lokal exportiert bzw. lokal oder aus dem Netzwerk importiert werden.
+- Laden Sie Office herunter, wobei `ALLE` Office-Kanäle und `ALLE` Office-Sprachen unterstützt werden.
+- Installieren Sie Office oder ändern Sie ein bestehendes Office, indem Sie z. B. neue Produkte und Anwendungen hinzufügen oder Produkte und Anwendungen deinstallieren.
+- Erstellen Sie Office-ISOs, wobei die Standard- und die stille Installationskonfiguration unterstützt werden.
+- Aktivieren Sie Office. Das Tool unterstützt Online-Aktivierung, Telefon-Aktivierung und KMS-Aktivierung.
+- Unterstützung der Office-Aktivierungsverwaltung, einschließlich Lizenzverwaltung, Schlüsselverwaltung und KMS-Verwaltung.
+- Ändern des Office-Aktualisierungskanals mit Unterstützung des Up-/Downgrades von Office ohne Neuinstallation.
+- Entfernen Sie Office. Erzwingen Sie das Entfernen von Office, wenn es nicht auf normalem Weg deinstalliert werden kann. Unterstützt Office ab Version 2003 bis zur neuesten Office-Version.
+- Integrierte Office-Tools, einschließlich Zurücksetzen von Einstellungen und Beheben von Office-Problemen.
+- Konvertieren Sie Office-Dokumente, basierend auf Office-COM. Es ist schnell und stabil.
+- Personalisieren Sie das Design, Sie können Ihr eigenes Office Tool Plus gestalten.
+- Mit den erweiterten Einstellungen können Sie erweiterte Funktionen, wie z. B. Office-interne Kanäle, nutzen.
 
-`Microsoft .NET Framework 4.6.1 oder neuer.`
+## Download und Schnellstart
 
-### Microsoft .NET Framework 4.6.2 herunterladen
+- [Download](https://otp.landian.vip/download.html)
+- [Schnellstart](https://github.com/YerongAI/Office-Tool/wiki)
+- [Dokumentation](https://otp.landian.vip/help/)
 
-[Webinstaller](http://go.microsoft.com/fwlink/?LinkId=780597)
+## Über Office Tool Plus
 
-[Offlineinstaller](http://go.microsoft.com/fwlink/?LinkId=780601)
+© 2016-2023 Yerong. Alle Rechte vorbehalten.
 
-[Sprachpakete für das Microsoft .Net Framework 4.6.2](http://go.microsoft.com/fwlink/?LinkId=780604)
+> Blog: [@Yerong の小窝](https://www.coolhub.top/) · GitHub: [@YerongAI](https://github.com/YerongAI) · Telegram: [@Office Tool Plus](https://t.me/s/otp_channel)
 
-## Office Tool Plus herunterladen
-
-[Offizielle Webseite](https://otp.landian.vip/)
-
-[Alternativer Download](https://delivery.yuntu.dev/office-tool/) von [云图小镇](https://www.yuntu.dev/)
-
-## Fachartikel
-
-[Konfigurationsoptionen](https://docs.microsoft.com/de-de/deployoffice/configuration-options-for-the-office-2016-deployment-tool)
-
-## Kurzanleitung
-
-Wählen Sie den Menüpunkt "Bereitstellen", fügen Sie ein gewünschtes Produkt hinzu und klicken Sie anschließend auf "Office installieren", um die Installation zu starten.
-
-## Software-Legitimität
-
-Office Tool Plus basiert auf Microsofts [Office-Bereitstellungstool](https://docs.microsoft.com/de-de/DeployOffice/overview-of-the-office-2016-deployment-tool). Wir haben einige neue Funktionen hinzugefügt, die den Bedürfnissen der Benutzer nachkommen.
-
-### Hinweise zur Aktivierungsfunktion
-
-Die Aktivierungsfunktion basierte auf Microsofts ospp.vbs (Office Software Protect Platform), alle Aktivierungsvorgänge werden von ospp.vbs durchgeführt. Um den Benutzern OSPP besser verständlich zu machen, haben wir es übersetzt (zh-cn, zh-tw).
-
-Sie können die Dokumentation von OSPP unter ````"C:\Program Files\Microsoft Office\Office16\OSPP.HTM"````  einsehen (Office-Installation erforderlich).
-
-## Danke an die Übersetzer
-
-- (ar-ps) العربية (الأراضي الفلسطينية) / Ibrahim
-- (de-de) Deutsch (Deutschland) / [Berny23](https://steamcommunity.com/id/Berny23)
-- (en-us) English (United States) / [Moedog](https://prprpr.love)
-- (es-es) Español (España, alfabetización internacional) / Xoseba
-- (fr-fr) Français (France) / Drake4478
-- (id-id) Bahasa Indonesia (Indonesian) / [Ida Bagus Anom Sanjaya](https://fb.me/Anom.Sanjaya17)
-- (it-it) Italiano (Italia) / [garf02](https://github.com/garf02)
-- (ja-jp) 日本語 (日本) / [秋山ヘイワ](https://github.com/akio1321)
-- (ko-kr) 한국어(대한민국) / [Jay Jang](http://www.yaeyaya.com)
-- (pl-pl) Polski (Polska) / JakubDriver
-- (pt-br) Português (Brasil) / [Hélio de Souza](https://tinyurl.com/hdstec)
-- (tr-tr) Türkçe (Türkiye) / Turan Furkan Topak
-- (vi-vn) Tiêng Việt (Việt Nam) / [phuocding](https://github.com/phuocding)
-- (zh-cn) 简体中文 (中国) / **官方语言 (Official language)**
-- (zh-tw) 繁體中文 (台灣) / [Yi Chi](https://www.cotpear.com)
-
-## Bei der Lokalisierung helfen
-
-Wir ermutigen alle, bei der Lokalisierung von OTP zu helfen. Im Folgenden erfahren Sie, wie Sie dabei vorgehen müssen:
-
-1. Dieses Repository forken.
-
-2. Die Lokalisierungs-Datei in die eigene Sprache übersetzen und speichern (z. B. ````zh-cn.xaml```` wird zu ````zh-tw.xaml````).
-
-3. Die Datei in das passende Verzeichnis kopieren (z. B. ````OfficeToolPlus/Language/zh-tw.xaml````).
-
-4. Eine Pull-Request erstellen.
-
-### Wie Sie Ihre Übersetzung testen
-
-1. Speichern Sie Ihre Lokalisierungs-Datei in einem Verzeichnis, wie z.B. ````D:\Data\zh-cn.xaml````.
-
-2. Öffnen Sie Office Tool Plus.
-
-3. Wechseln Sie in die Einstellungen und klicken Sie auf ````Load localization file````.
-
-4. Wählen Sie die Datei aus, die Sie gerade gespeichert haben.
-
-Anschließend lädt die Anwendung Ihre Übersetzung. Wenn Sie eine neue Übersetzung zur Software hinzufügen, zeigt sie die Meldung: Der Server ist nicht verfügbar. Das ist normal.
-
-### Darüber hinaus
-
-````Jedem Übersetzer stellen wir eine Admin-App zur Verfügung, mit der man die Neuigkeiten ändern und ein Hintergrundbild hochladen kann.```` [Schicken Sie uns eine E-Mail.](mailto:yerong@coolhub.top)
+<!-- © 2021 | German translation by Berny23 | v4.10 | https://steamcommunity.com/id/Berny23 | https://sourceforge.net/u/berny23 | https://github.com/Berny23 -->

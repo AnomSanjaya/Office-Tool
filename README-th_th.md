@@ -1,98 +1,48 @@
-﻿# โปรแกรม Office Tool Plus
+#
 
-[⬅ Back](https://github.com/YerongAI/Office-Tool)
+<p align="center">
+<img alt="Office Tool Plus Logo" src="https://otp.landian.vip/static/images/logo.webp"/>
+</p>
 
-Office Tool Plus คือโปรแกรมสำหรับจัดการ การดาวน์โหลด, การติดตั้งชุดโปรแกรม Office.
+<p align="center">
+<a href="https://www.coolhub.top/" target="_blank"><img alt="Author" src="https://img.shields.io/badge/Author-Yerong-blue?style=flat-square"/></a>
+<img alt="Language" src="https://img.shields.io/badge/Language-C%23-green?style=flat-square"/>
+<a href="https://otp.landian.vip/" target="_blank"><img alt="Release" src="https://img.shields.io/github/v/release/YerongAI/Office-Tool?style=flat-square"/></a>
+<img alt="License" src="https://img.shields.io/github/license/YerongAI/Office-Tool?style=flat-square"/>
+</p>
 
-Office Tool Plus บนพื้นฐานระบบสำหรับ Deploy ชุดโปรแกรม Microsoft's Office. คุณสามารถปรับแต่งค่าตัวติดตั้ง Office และดาวน์โหลดไฟล์ตัวติดตั้ง Office สำหรับนำไปติดตั้งที่เครื่องอื่นโดยไม่ต้องพึ่งอินเตอร์เน็ต.
+> นี่คือ เครื่องมือที่ทรงพลังและมีประโยชน์สำหรับการปรับใช้ Office
 
-และอื่นๆ เช่น จัดการชุดโปรแกรม Office ที่มีอยู่ก่อนแล้ว, เพิ่มชุดภาษาของโปรแกรม Office หรือแม้กระทั่งการปรับแต่งไฟล์ตัวถอนการติดตั้งชุด Office.
+รองรับการปรับใช้แบบกำหนดเองและการเปิดใช้งานผลิตภัณฑ์ต่อไปนี้:
 
-## System Requirements
+- Microsoft 365
+- Office 2016, 2019, 2021
+- Visio 2016, 2019, 2021 & Online Plan 2
+- Project 2016, 2019, 2021 & Online Desktop Client
 
-Windows 7 SP1, Windows 8 and Windows 10.
+ฟังก์ชั่นและคุณสมบัติ:
 
-Windows Server 2008 R2 SP1, Windows Server 2012 or higher.
+- สร้างการกำหนดค่าการติดตั้ง Office การกำหนดค่าสามารถส่งออกไปยังที่เก็บบนพีซีของคุณ และสามารถนำเข้าจากพีซีของคุณและเว็บ
+- ดาวน์โหลด Office ที่รองรับ `ทั้งหมด` ผ่านทางช่องทาง Office `ทั้งหมด` และ ชุดภาษาของ Office
+- ติดตั้ง Office หรือ ปรับแต่ง Office ที่มีอยู่แล้วในเครื่องของคุณ เช่น การเพิ่มผลิตภัณฑ์และแอพพลิเคชั่นใหม่ หรือ ถอนการติดตั้งผลิตภัณฑ์และแอพพลิเคชั่น
+- สร้างไฟล์ Office แบบ ISO รองรับการกำหนดค่าการติดตั้งเริ่มต้นและการกำหนดค่าการติดตั้งแบบไม่โต้ตอบ
+- เปิดใช้งาน Office รองรับการเปิดใช้งานออนไลน์ การเปิดใช้งานโทรศัพท์ และการเปิดใช้งานผ่าน KMS
+- รองรับการจัดการ การเปิดใช้งาน Office รวมถึงการจัดการใบอนุญาต การจัดการรหัสผลิตภัณฑ์ และการจัดการ KMS
+- เปลี่ยนช่องทางการปรับปรุง Office รองรับการอัพเกรด/ดาวน์เกรด Office โดยไม่ต้องติดตั้ง Office ใหม่
+- ลบ Office บังคับลบ Office ในขณะที่ไม่สามารถถอนการติดตั้งได้ตามปกติ รองการสนับสนุน Office 2003 จนถึง Office เวอร์ชั่นล่าสุด
+- เครื่องมือ Office ในตัว รวมถึงการรีเซ็ตการตั้งค่า ในการแก้ไขปัญหา Office
+- แปลงเอกสาร Office ตามค่ามาตรฐาน Office ได้อย่างรวดเร็วและเสถียร
+- ปรับแต่งธีม และสามารถสร้าง Office Tool Plus ในแบบของคุณได้
+- การตั้งค่าขั้นสูงช่วยให้คุณใช้ฟีเจอร์ขั้นสูงได้ เช่น ช่องทางภายในของ Office
 
-`Microsoft .NET Framework 4.6.1 or higher.`
+## ดาวน์โหลด และ เริ่มต้นอย่างรวดเร็ว
 
-### Download Microsoft .NET Framework 4.6.1
+- [ดาวน์โหลด](https://otp.landian.vip/download.html)
+- [เริ่มต้นอย่างรวดเร็ว](https://github.com/YerongAI/Office-Tool/wiki)
+- [เอกสาร](https://otp.landian.vip/help/)
 
-[Web Installer](http://go.microsoft.com/fwlink/?LinkId=780597)
+## เกี่ยวกับเรา
 
-[Offline Installer](http://go.microsoft.com/fwlink/?LinkId=780601)
+© 2016-2023 Yerong. สงวนลิขสิทธิ์
 
-[Language Packs for Microsoft .Net Framework 4.6.1](http://go.microsoft.com/fwlink/?LinkId=780604)
-
-## ดาวน์โหลด Office Tool Plus
-
-[ดาวน์โหลดบนเว็บไซต์หลัก](https://otp.landian.vip/)
-
-[ตัวเลือกการดาวน์โหลดอื่นๆ](https://delivery.yuntu.dev/office-tool/) by [云图小镇](https://www.yuntu.dev/)
-
-## บทความเกี่ยวกับเทคนิคการตั้งค่า
-
-[ตัวเลือกการตั้งค่า](https://docs.microsoft.com/en-us/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)
-
-## การเริ่มต้นใช้งาน
-
-Go to Deploy page, add a product (or more) that you want to install, then click Deploy to start your installation. You can configure other settings if you want.
-
-You need to Activate Office after installation.
-
-## สิทธิตามกฎหมายของโปรแกรม
-
-Office Tool Plus ถูกพัฒนาบนพื้นฐานของชุด Microsoft's [Office Deployment Tool](https://docs.microsoft.com/th-th/DeployOffice/overview-of-the-office-2016-deployment-tool). และเราได้เพิ่มฟังก์ชั่นบางอย่างตามความต้องการของผู้ใช้งาน.
-
-### เกี่ยวกับฟังก์ชั่นการเปิดใช้งานชุดโปรแกรม Office
-
-ฟังก์ชั่นการเปิดใช้งานโปรแกรม บนพื้นฐาน Microsoft's ospp.vbs (Office Software Protect Platform) การเปิดใช้งานทั้งหมดจะดำเนินการผ่าน ospp.vbs
-The activate function was based on Microsoft's ospp.vbs (Office Software Protect Platform), all activate operations are performed by ospp.vbs. และเพื่อให้ผู้ใช้เข้าใจ OSPP ได้ดีขึ้นเราจึงทำการแปลเป็นภาษต่าง ๆ (zh-cn, zh-tw).
-
-คุณสามารถดูรายละเอียด OSPP ได้ใน ````"C:\Program Files\Microsoft Office\Office16\OSPP.HTM"```` (ต้องมีโปรแกรม Office ที่ได้ติดตั้งไว้ก่อนแล้ว).
-
-## ขอบคุณผู้ที่มีส่วนร่วมในโครงการ
-
-- (ar-ps) العربية (الأراضي الفلسطينية) / Ibrahim
-- (de-de) Deutsch (Deutschland) / [Berny23](https://steamcommunity.com/id/Berny23)
-- (en-us) English (United States) / [Moedog](https://prprpr.love)
-- (es-es) Español (España, alfabetización internacional) / Xoseba
-- (fr-fr) Français (France) / Drake4478
-- (id-id) Bahasa Indonesia (Indonesian) / [Ida Bagus Anom Sanjaya](https://fb.me/Anom.Sanjaya17)
-- (it-it) Italiano (Italia) / [garf02](https://github.com/garf02)
-- (ja-jp) 日本語 (日本) / [秋山ヘイワ](https://github.com/akio1321)
-- (ko-kr) 한국어(대한민국) / [Jay Jang](http://www.yaeyaya.com)
-- (pl-pl) Polski (Polska) / JakubDriver
-- (pt-br) Português (Brasil) / [Hélio de Souza](https://tinyurl.com/hdstec)
-- (tr-tr) Türkçe (Türkiye) / Turan Furkan Topak
-- (vi-vn) Tiêng Việt (Việt Nam) / [phuocding](https://github.com/phuocding)
-- (zh-cn) 简体中文 (中国) / **官方语言 (Official language)**
-- (zh-tw) 繁體中文 (台灣) / [Yi Chi](https://www.cotpear.com)
-
-## ช่วยเราแปลภาษา
-
-We encourage everyone to help with localization. The following is how to do.
-
-1. Fork แยกโครงการออกไป
-
-2. ทำการแปลโดยอิงไฟล์ภาษา ````zh-cn.xaml```` แล้วแปลเป็นภาษาที่เราต้องการ จากนั้นตั้งชื่อไฟล์ภาษาให้สอดคล้องกับภาษาที่แปลเสร็จ เช่น ````zh-tw.xaml````
-
-3. คัดลอกไฟ์ภาษาที่ได้ทำการแปลใหม่ ไปไว้ในโฟลเดอร์ให้ถูกต้อง, ตัวอย่างเช่น OfficeToolPlus/Language/zh-tw.xaml
-
-4. สร้าง Pull Request.
-
-### การทดสอบภาษาที่แปลใหม่
-
-1. บันทึกไฟล์ภาษาลงในโฟลเดอร์ Office Tool Plus, เช่น ````D:\Date\zh-cn.xaml````.
-
-2. เปิดโปรแกรม.
-
-3. ไปที่หน้า การตั้งค่า, คลิดเลือก ````โหลดไฟล์ภาษา.````
-
-4. เลือกไฟล์ภาษาที่ต้องการทดสอบ.
-
-หลังจากนั้น โปรแกรมจะทำการโหลดไฟล์ภาษา ถ้าคุณกำลังเพิ่มภาษาใหม่ลงไปยังโปรแกรม คุณจะพบข้อผิดพลาด : พบข้อผิดพลาดการเชื่อมต่อกับเซิร์ฟเวอร์. ซึ่งถือว่ามันปกติ
-
-### เพิ่มเติม
-
-````สำหรับผู้แปลภาษาเราจะมอบ ชุดโปรแกรมสำหรับผู้ดูแล ให้ ซึ่งโปรแกรมรุ่นพิเศษนี้ จะอนุญาตให้คุณเปลี่ยนแปลงประกาศ และสามารถอัพโหลดไฟล์ภาพพื้นหลังของโปรแกรมได้.```` [Send a e-mail](mailto:yerong@coolhub.top) ````ไปหาเรา.````
+> บล็อก [@Yerong の小窝](https://www.coolhub.top/) · กิตฮับ [@YerongAI](https://github.com/YerongAI) · เทเลแกรม [@Office Tool Plus](https://t.me/s/otp_channel)
